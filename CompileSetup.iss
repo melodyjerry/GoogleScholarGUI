@@ -61,10 +61,10 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "{#ProjectDir}\dist\GoogleScholar.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#ProjectDir}\dist\agents.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#ProjectDir}\dist\config.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#ProjectDir}\dist\domains.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#ProjectDir}\dist\ips.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#ProjectDir}\dist\config\agents.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#ProjectDir}\dist\config\config.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#ProjectDir}\dist\config\domains.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#ProjectDir}\dist\config\ips.txt"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
@@ -72,5 +72,5 @@ Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
+;Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 

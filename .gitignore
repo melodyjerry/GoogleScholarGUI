@@ -4,4 +4,6 @@ debug/
 dist/
 release/
 QtProject/
+Interface.spec
 文件转换命令.txt
+.gitignore
