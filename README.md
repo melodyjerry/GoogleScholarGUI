@@ -8,7 +8,7 @@
 - requests    
 - requests[socks]    
 - lxml    
-- padas    
+- pandas    
 - retrying    
 - xlrd    
 
